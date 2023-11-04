@@ -1,13 +1,14 @@
-import {useContext} from 'react';
-import bookDemo from './context/bookShow';
+import React from 'react'
+import BookList from './BookList';
+import BookContext from './Context/BookContext';
+ 
 const App = () => {
-  const num  = useContext(bookDemo);
   return (
     <div>
-      <h1>{num}</h1>
+      <BookList/>
+      <BookContext/>
     </div>
   )
 }
 
-export default App;
-   
+export default App
